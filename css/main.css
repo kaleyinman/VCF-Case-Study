@@ -35,9 +35,6 @@ h4 {
    font-family: 'Roboto';
 }
 
-a {
-    color: var(--green);
-  }
 
 img {
     max-width: 100%;
@@ -64,7 +61,7 @@ img {
     background-color: var(--green);
     display: block;
     border: 1px solid var(--light-gray);
-    padding: .6rem 1.75rem;
+    padding: .6rem 1.7rem;
     font-size: 1rem;
   }
 
