@@ -4,10 +4,7 @@
     --white: #fff;
     --green: #59b997;
     --light-gray: #eeee;
-
 }
-
-
 
 html {
   box-sizing: border-box;
@@ -20,10 +17,61 @@ body {
     color: var(--black);
     line-height: 21px;
     font-size: 16px;
-
+    color: var(--dark-grey);
   }
 
-  a {
+h1, h2 {
+    font-family: var(--font-sans-serif);
+    padding: .5rem;
+}
+
+h4 {
+   font-family: var(--font-sans-serif);
+   font-size: 20px;
+   line-height: 24px;
+   color: var(--dark-grey);
+   font-weight: normal;
+}
+
+a {
     color: var(--green);
   }
 
+img {
+    max-width: 100%;
+    display: block;
+  }
+
+.component img {
+    max-width: initial;
+  }
+
+.component__img {
+    border: 1px solid #eeee;
+    overflow-x: auto;
+  }
+
+  .component__code {
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+
+  .button {
+    font-family: var(--font-sans-serif);
+    color: var(--white);
+    background-color: var(--green);
+    display: block;
+    border: 1px solid var(--light-gray);
+    padding: .6rem 1.75rem;
+    font-size: 1rem;
+  }
+
+  .button--transparent {
+    font-family: var(--font-sans-serif);
+    color: var(--light-gray);
+    border: 1px solid var(--light-gray);
+    padding: .6rem 1.75rem;
+    font-size: .8rem;
+    background-color: transparent;
+    display: block;
+  }
