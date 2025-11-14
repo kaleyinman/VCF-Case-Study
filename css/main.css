@@ -1,5 +1,29 @@
+:root {
+    --font-sans-serif: 'Roboto Condensed', sans-serif;
+    --black: #000;
+    --white: #fff;
+    --green: #59b997;
+    --light-gray: #eeee;
+
+}
+
+
+
 html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
+
+body {
+    font-family: var(--font-sans-serif);
+    color: var(--black);
+    line-height: 21px;
+    font-size: 16px;
+
+  }
+
+  a {
+    color: var(--green);
+  }
+
