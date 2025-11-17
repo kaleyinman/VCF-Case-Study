@@ -36,15 +36,45 @@ h4 {
    font-family: 'Roboto';
 }
 
-a:link {
-    color: var(--green);
-    text-decoration: none
-}
-
 img {
     max-width: 100%;
     display: block;
   }
+
+a {
+  text-decoration: none;
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 1rem;
+  margin: 0;
+  display: flex;
+  float: right;
+}
+
+.navbar-brand {
+ vertical-align: middle;
+ display: inline-block;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: right;
+}
+
+ul li a {
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li {
+    float: right;
+}
 
 .component img {
     max-width: initial;
@@ -55,22 +85,22 @@ img {
     overflow-x: auto;
   }
 
-  .component__code {
+.component__code {
     margin: 0 auto;
     padding: 1.5rem;
   }
 
-  .button {
+ .button {
     font-family: var(--font-sans-serif);
     color: var(--white);
     background-color: var(--green);
-    display: block;
+    display: inline-block;
     border: 1px solid var(--light-gray);
     padding: .6rem 1.7rem;
     font-size: 1rem;
   }
 
-  .button--transparent {
+.button--transparent {
     font-family: var(--font-sans-serif);
     color: var(--light-gray);
     border: 1px solid var(--light-gray);
@@ -80,7 +110,7 @@ img {
     display: block;
   }
 
-  table, th, td {
+table, th, td {
     border: 1px solid var(--light-gray);
     padding: .7em 1em;
     border-width: 0 1px 1px 0;
@@ -93,14 +123,14 @@ table {
     border-collapse: separate;
 }
 
-  th {
+th {
     padding: .7em 1em;
     border-width: 0 1px 1px 0;
     text-align: center;
     font-weight: 600;
   }
 
-  td {
+td {
     padding: .7em 1em;
     text-align: left;
     border-width: 0 1px 1px 0;
