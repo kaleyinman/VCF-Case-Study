@@ -45,12 +45,16 @@ a {
   text-decoration: none;
 }
 
-.nav-list {
-  list-style-type: none;
-  padding: 1rem;
-  margin: 0;
+.banner {
   display: flex;
-  float: right;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--black);
+  padding: 0.85rem;
+}
+
+.nav-list {
+  display: flex;
+  gap: 0.5rem;
 }
 
 .navbar-brand {
@@ -99,6 +103,23 @@ ul li a {
     padding: .6rem 1.7rem;
     font-size: 1rem;
   }
+
+   .header--donate {
+    font-family: var(--font-sans-serif);
+    color: var(--white);
+    background-color: var(--green);
+    display: inline-block;
+    border: 1px solid var(--light-gray);
+    padding: .6rem 1.7rem;
+    font-size: 1rem;
+  }
+
+  .header--magnifying-glass {
+  color: var(--black);
+  padding: 5px;
+  background: none;
+  border: none;
+}
 
 .button--transparent {
     font-family: var(--font-sans-serif);
