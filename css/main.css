@@ -11,6 +11,7 @@ html {
 }
 *, *:before, *:after {
   box-sizing: inherit;
+}
 
 body {
     font-family: var(--font-sans-serif);
@@ -35,6 +36,10 @@ h4 {
    font-family: 'Roboto';
 }
 
+a:link {
+    color: var(--green);
+    text-decoration: none
+}
 
 img {
     max-width: 100%;
@@ -73,4 +78,32 @@ img {
     font-size: .8rem;
     background-color: transparent;
     display: block;
+  }
+
+  table, th, td {
+    border: 1px solid var(--light-gray);
+    padding: .7em 1em;
+    border-width: 0 1px 1px 0;
+}
+
+table {
+    border-width: 1px 0 0 1px;
+    max-width: 100%;
+    margin: 0 0 1.5rem;
+    border-collapse: separate;
+}
+
+  th {
+    padding: .7em 1em;
+    border-width: 0 1px 1px 0;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  td {
+    padding: .7em 1em;
+    text-align: left;
+    border-width: 0 1px 1px 0;
+    word-wrap: break-word;
+    max-width: 600px;
   }
