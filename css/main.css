@@ -47,6 +47,9 @@ a {
   color: var(--dark-grey);
 }
 
+.header {
+    text-align: right;
+}
 
 .banner--logo {
     display: flex;
@@ -55,7 +58,10 @@ a {
 }
 
 .banner--buttons {
- 
+    display: inline-block;
+    justify-content: flex-end;
+    gap: .7rem;
+    text-align: right;
 }
 
 .nav-list {
