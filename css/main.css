@@ -73,16 +73,13 @@ a {
   flex-direction: row;
   justify-content: flex-end;
   flex-flow: row wrap;
+  list-style-type: none;
 }
 
 .navbar-brand {
  display: flex;
  align-content: space-between;
  flex-grow: 1;
-}
-
-.nav-list {
-    list-style-type: none;
 }
 
 .nav-list ul {
@@ -225,7 +222,7 @@ td {
 }
 
 .pdf-list li li::before {
-  background-image: url('img/pdf.jpg');
+  background-image: url("../components/img/pdf.jpg");
   background-repeat: no-repeat;
   background-position: left center;
   margin-right: 0.2em;
@@ -256,29 +253,6 @@ td {
 }
 
 .didyouknow_sub {
-    position: absolute;
-    top: 55%;
-    left: 22%;
-    text-align: left;
-    transform: (-50%, -50%);
-    font-family: var(--font-sans-serif);
-    font-size: 22px;
-    line-height: 31px
-}
-
-.egyptian_vulture {
-   position: absolute;
-   top: 50%;
-   left: 30%;
-   text-align: center;
-   color: var(--white);
-   transform: translate(-50%, -50%);
-   font-family: var(--font-sans-serif);
-   font-size: 32px;
-   line-height: 32px;
-}
-
-.endangered {
     position: absolute;
     top: 55%;
     left: 22%;
@@ -355,9 +329,7 @@ td {
 }
 
 .container-donate {
-    background-image: url('img/vulture_donate.jpg');
     background-color: var(--black);
-    text-align: center;
     color: var(--white);
     display: flex;
     flex-direction: column;
@@ -366,6 +338,64 @@ td {
     content: "";
 }
 
-.donate-header {
-    font-size: 36px;
+.container-first {
+    background-image: url("../components/img/vulture_firstimage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem 40rem;
+    text-align: center;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    content: ""
+}
+
+.first-list {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  flex-flow: row wrap;
+  list-style-type: none;
+}
+
+.container-subscribe {
+    background-color: var(--green);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="email"] {
+    background-color: transparent;
+    border: 1px solid var(--white);
+    margin-top: 20px;
+    padding: 12px 15px 12px 15px;
+}
+
+input[type="firstname"] {
+    background-color: transparent;
+    border: 1px solid var(--white);
+    margin-top: 20px;
+    padding: 12px 15px 12px 15px;
+}
+
+input[type="lastname"] {
+    background-color: transparent;
+    border: 1px solid var(--white);
+    margin-top: 20px;
+    padding: 12px 15px 12px 15px;
+}
+
+input[type="submit"] {
+    padding: 12px 25px 12px 25px;
+    margin-top: 20px;
+    background-color: var(--dark-green);
+    color: white;
+    border: 1px solid var(--black);
+    margin-left: 15px;
+    margin-bottom: 25px;
 }
