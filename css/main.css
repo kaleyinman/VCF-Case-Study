@@ -151,7 +151,9 @@ ul li a {
     padding: .6rem 1.75rem;
     font-size: .8rem;
     background-color: transparent;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .button--subscribe {
@@ -264,6 +266,29 @@ td {
     line-height: 31px
 }
 
+.egyptian_vulture {
+   position: absolute;
+   top: 50%;
+   left: 30%;
+   text-align: center;
+   color: var(--white);
+   transform: translate(-50%, -50%);
+   font-family: var(--font-sans-serif);
+   font-size: 32px;
+   line-height: 32px;
+}
+
+.endangered {
+    position: absolute;
+    top: 55%;
+    left: 22%;
+    text-align: left;
+    transform: (-50%, -50%);
+    font-family: var(--font-sans-serif);
+    font-size: 22px;
+    line-height: 31px
+}
+
 .component__code.footer {
     background-color: var(--light-gray);
     padding: 2rem 20rem;
@@ -318,4 +343,29 @@ td {
 .social-media a {
   display: inline-block;
   padding: 0.5rem;
+}
+
+.footer-2 {
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-donate {
+    background-image: url('img/vulture_donate.jpg');
+    background-color: var(--black);
+    text-align: center;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    content: "";
+}
+
+.donate-header {
+    font-size: 36px;
 }
