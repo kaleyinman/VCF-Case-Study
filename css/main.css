@@ -24,8 +24,16 @@ body {
 
 h1, h2 {
     font-family: var(--font-sans-serif);
-    padding: .5rem;
     font-family: 'Roboto';
+    font-weight: normal;
+    size: 70px;
+}
+
+h3 {
+    font-family: var(--font-sans-serif);
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: normal;
 }
 
 h4 {
@@ -332,7 +340,7 @@ td {
 
 .social.list li::before {
         content: "\f00c"; 
-        font-family: "Font Awesome 5 Free"; /* Or your Font Awesome version */
+        font-family: "Font Awesome 5 Free";
         font-weight: 900; 
         position: absolute;
         left: 0;
@@ -350,7 +358,7 @@ td {
 }
 
 .container-donate {
-    background-color: var(--black);
+    background-image: url('/components/img/vulture_donate.png');
     color: var(--white);
     display: flex;
     height: 370px;
@@ -361,10 +369,9 @@ td {
 }
 
 .container-first {
-    background-image: url("../components/img/vulture_firstimage.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url("../components/img/vulture_firstimage.png.jpg");
     padding: 2rem 40rem;
+    height: 600px;
     text-align: center;
     color: var(--white);
     display: flex;
