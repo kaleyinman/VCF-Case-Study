@@ -353,6 +353,7 @@ td {
     background-color: var(--black);
     color: var(--white);
     display: flex;
+    height: 370px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -385,6 +386,7 @@ td {
     background-color: var(--green);
     color: var(--white);
     display: flex;
+    height: 300px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
