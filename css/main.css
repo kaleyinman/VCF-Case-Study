@@ -24,9 +24,10 @@ body {
 
 h1, h2 {
     font-family: var(--font-sans-serif);
+    font-size: 50px;
+    padding: .5rem;
     font-family: 'Roboto';
     font-weight: normal;
-    size: 70px;
 }
 
 h3 {
@@ -107,19 +108,101 @@ ul li a {
     float: right;
 }
 
-.component img {
-    max-width: initial;
-  }
+.container-one {
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 100%;
+  white-space: normal;
+}
 
-.component__img {
-    border: 1px solid #eeee;
-    overflow-x: auto;
-  }
+.container-two {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
 
-.component__code {
-    margin: 0 auto;
-    padding: 1.5rem;
-  }
+.page-section--hero {
+    text-align: left;
+    margin: 0;
+    color: var(--dark-grey)
+}
+
+.page-section__heading {
+    text-align: left;
+    text-transform: none;
+}
+
+.page-section__paragraph {
+    text-align: left;
+}
+
+.didyouknow {
+   position: absolute;
+   top: 50%;
+   left: 30%;
+   text-align: left;
+   transform: translate(-50%, -50%);
+   font-family: var(--font-sans-serif);
+   font-size: 32px;
+   line-height: 32px;
+}
+
+.didyouknow_sub {
+    position: absolute;
+    top: 55%;
+    left: 22%;
+    text-align: left;
+    transform: (-50%, -50%);
+    font-family: var(--font-sans-serif);
+    font-size: 22px;
+    line-height: 31px
+}
+
+.didyouknow_sub p {
+    overflow-wrap: break-word;
+    width: 50%;
+}
+
+.pdf-nav__list {
+    font-family: var(--font-sans-serif);
+    font-size: 16px;
+    line-height: 21px;
+    padding: 2rem;
+    margin: 0;
+    color: var(--dark-grey);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.pdf-nav__list a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.pdf-nav__list li::before {
+  background-image: url('../components/img/pdf.jpg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  margin-right: 0.2em;
+  display: inline-block;
+  width: 50px;
+  content: "";
+  height: 50px;
+  background-size: contain;
+}
 
  .button {
     font-family: var(--font-sans-serif);
@@ -169,107 +252,7 @@ ul li a {
     padding: .8rem 1.6rem;
     font-size: 1rem;
     display: block;
-
   }
-
-table, th, td {
-    border: 1px solid var(--light-gray);
-    padding: .7em 1em;
-    border-width: 0 1px 1px 0;
-}
-
-table {
-    border-width: 1px 0 0 1px;
-    max-width: 100%;
-    margin: 0 0 1.5rem;
-    border-collapse: separate;
-}
-
-th {
-    padding: .7em 1em;
-    border-width: 0 1px 1px 0;
-    text-align: center;
-    font-weight: 600;
-  }
-
-td {
-    padding: .7em 1em;
-    text-align: left;
-    border-width: 0 1px 1px 0;
-    word-wrap: break-word;
-    max-width: 600px;
-  }
-
-
-.pdf-nav__list {
-    font-family: var(--font-sans-serif);
-    font-size: 16px;
-    line-height: 21px;
-    padding: 2rem;
-    margin: 0;
-    color: var(--dark-grey);
-    display: flex;
-    align-items: center;
-    justify-content: left;
-}
-
-.pdf-nav__list a {
-    text-decoration: none;
-    color: black;
-}
-
-.pdf-list ul {
-    list-style: none;
-    padding: 0;
-}
-
-.pdf-list li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-
-.pdf-list li li::before {
-  background-image: url("../components/img/pdf.jpg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  margin-right: 0.2em;
-  display: inline-block;
-  width: 50px;
-  content: "";
-  height: 50px;
-  background-size: contain;
-}
-
-.container-one {
-  position: relative;
-  text-align: center;
-  color: white;
-  width: 1000px;
-  white-space: normal;
-}
-
-.didyouknow {
-   position: absolute;
-   top: 50%;
-   left: 30%;
-   text-align: left;
-   transform: translate(-50%, -50%);
-   font-family: var(--font-sans-serif);
-   font-size: 32px;
-   line-height: 32px;
-}
-
-.didyouknow_sub {
-    position: absolute;
-    top: 55%;
-    left: 22%;
-    text-align: left;
-    transform: (-50%, -50%);
-    font-family: var(--font-sans-serif);
-    font-size: 22px;
-    line-height: 31px
-}
 
 .component__code.footer {
     background-color: var(--light-gray);
@@ -279,6 +262,8 @@ td {
 .footer {
     display: flex;
     flex-direction: column;
+    padding: 0;
+    margin: 0;
 }
 
 .footer-top {
@@ -328,26 +313,6 @@ td {
   padding: 0.5rem;
 }
 
-.social-list ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-.social-list li {
-        position: relative;
-        padding-left: 25px; 
-        margin-bottom: 5px;
-    }
-
-.social.list li::before {
-        content: "\f00c"; 
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900; 
-        position: absolute;
-        left: 0;
-        top: 0;
-        color: var(--green);
-    }
-
 .footer-2 {
     background-color: var(--black);
     color: var(--white);
@@ -355,10 +320,12 @@ td {
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .container-donate {
-    background-image: url('/components/img/vulture_donate.png');
+    background-image: url('../components/img/vulture_donate.png');
     color: var(--white);
     display: flex;
     height: 370px;
@@ -370,6 +337,7 @@ td {
 
 .container-first {
     background-image: url("../components/img/vulture_firstimage.png.jpg");
+    background-position: center;
     padding: 2rem 40rem;
     height: 600px;
     text-align: center;
@@ -389,7 +357,40 @@ td {
   list-style-type: none;
 }
 
-.container-subscribe {
+.component__code {
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+
+  table, th, td {
+    border: 1px solid var(--light-gray);
+    padding: .7em 1em;
+    border-width: 0 1px 1px 0;
+}
+
+table {
+    border-width: 1px 0 0 1px;
+    max-width: 100%;
+    margin: 0 0 1.5rem;
+    border-collapse: separate;
+}
+
+th {
+    padding: .7em 1em;
+    border-width: 0 1px 1px 0;
+    text-align: center;
+    font-weight: 600;
+  }
+
+td {
+    padding: .7em 1em;
+    text-align: left;
+    border-width: 0 1px 1px 0;
+    word-wrap: break-word;
+    max-width: 600px;
+  }
+
+  .container-subscribe {
     background-color: var(--green);
     color: var(--white);
     display: flex;
@@ -429,3 +430,13 @@ input[type="submit"] {
     margin-left: 15px;
     margin-bottom: 25px;
 }
+
+.address-list li::before {
+        content: "\f00c"; 
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900; 
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: var(--green);
+    }
