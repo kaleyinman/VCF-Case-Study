@@ -135,6 +135,7 @@ ul li a {
 
 .page-section__paragraph {
     text-align: left;
+    max-width: 1150px;
 }
 
 .didyouknow {
@@ -253,6 +254,7 @@ li {
     font-size: 1rem;
     display: block;
   }
+  
 
 .component__code.footer {
     background-color: var(--light-gray);
@@ -280,7 +282,6 @@ li {
 }
 
 .footer-column ul {
-    list-style-type: none;
     margin: 0;
     padding: 0;
     font-size: 1rem;
@@ -324,6 +325,15 @@ li {
     padding: 0;
 }
 
+.footer-2 a {
+  color: var(--green);
+}
+
+.footer-2 a:hover {
+  text-decoration: underline;
+  color: var(--white);
+}
+
 .container-donate {
     background-image: url('../components/img/vulture_donate.png');
     color: var(--white);
@@ -337,6 +347,7 @@ li {
 
 .container-first {
     background-image: url("../components/img/vulture_firstimage.png.jpg");
+    background-size: cover;
     background-position: center;
     padding: 2rem 40rem;
     height: 600px;
@@ -430,13 +441,3 @@ input[type="submit"] {
     margin-left: 15px;
     margin-bottom: 25px;
 }
-
-.address-list li::before {
-        content: "\f00c"; 
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900; 
-        position: absolute;
-        left: 0;
-        top: 0;
-        color: var(--green);
-    }
